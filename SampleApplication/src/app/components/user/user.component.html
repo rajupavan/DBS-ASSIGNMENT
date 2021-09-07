@@ -1,1 +1,43 @@
-<p>user works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <form class="user-form" #userForm="ngForm"  (ngSubmit)="onSubmit()">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" class="form-control"
+                        [(ngModel)]= "userData.name"
+                        name="userName"
+                        placeholder="Username" 
+                        aria-describedby="basic-addon1" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="email" class="form-control" placeholder="Email" 
+                        [(ngModel)]= "userData.email"
+                        name="email"
+                        aria-describedby="basic-addon1" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Phone" 
+                        [(ngModel)]= "userData.phone"
+                        name="phone"
+                        aria-describedby="basic-addon1" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="url" class="form-control" placeholder="WebSite"
+                        [(ngModel)]= "userData.website"
+                        name="website"
+                        aria-describedby="basic-addon1" >
+                </div>
+                <button type="submit" class="btn btn-primary" 
+                 [disabled]="!userForm.valid">Submit</button>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+
+</div>

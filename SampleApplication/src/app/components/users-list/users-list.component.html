@@ -1,1 +1,11 @@
 <p>users-list works!</p>
+
+<div class="container">
+    <div *ngIf="usersList">
+        <app-user-info [usersData]="usersList"
+         (editUserAction)="onEdit($event)"
+         (deleteUserAction)="onDelete($event)">
+
+        </app-user-info>
+    </div>
+</div>

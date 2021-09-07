@@ -1,1 +1,10 @@
 <p>user-info works!</p>
+<div class="card" *ngFor="let item of usersData">
+    <div class="card-body">
+        <div> {{item.name}} <span (click)="onEdit(item)">Edit</span> <span (click)="onDelete(item)">Delete</span></div>
+        <div>{{item.phone}}</div>
+        <div>{{item.email}}</div>
+        <div>{{item.website}}</div>
+    </div>
+
+</div>
