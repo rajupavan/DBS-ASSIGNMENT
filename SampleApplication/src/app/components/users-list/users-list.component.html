@@ -1,5 +1,7 @@
 <p>users-list works!</p>
-
+<button class="btn btn-primary" (click)="createUser()" >
+    Create New User
+</button>
 <div class="container">
     <div *ngIf="usersList">
         <app-user-info [usersData]="usersList"
