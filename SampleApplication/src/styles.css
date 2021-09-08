@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+*{font-family: 'Poppins', sans-serif;}
+body{background-color: #f3f6f9;}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #eff2f5;
+    border-radius: .475rem;
+    box-shadow: 0 0 20px 0 rgb(76 87 125 / 2%);
+    border: 0;
+    margin-bottom: 28px;
+    
+} 
+
+.card:hover{
+    transition: .5s;
+    box-shadow:1px 17px 20px 0 rgb(0 0 0 / 11%);
+}
+.card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding: 0 2.25rem;
+    background-color: transparent;
+}
+
+.card-title > h4 {
+    color: #303030;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.card .card-header .card-title {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+    margin-left: 0;
+}
+.card .card-header .card-toolbar {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+    flex-wrap: wrap;
+}
+.pb-8 {
+    padding-bottom: 2rem !important;
+}
+/* .pt-6 {
+    padding-top: 1.5rem !important;
+} */
+.px-9 {
+    padding-right: 2.25rem !important;
+    padding-left: 2.25rem !important;
+}
+.mb-0{margin-bottom: 0;}
+.ml-2{margin-left: 5px;}
+.body-txt{margin-bottom: 0;margin-top:12px;}
+.body-txt > small{ display: block;color: #b5b5c3 !important;}
+.body-txt > label{ display: block;color: #7e8299 !important; }
+.profile-img{
+    display: inline;
+    background-color: #efefef;
+    padding: 2px;
+    border-radius: 50%;
+    width: 35px;margin-right: 5px;
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
+}

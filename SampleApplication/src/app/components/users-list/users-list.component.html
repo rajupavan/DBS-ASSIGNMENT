@@ -1,12 +1,23 @@
-<button class="btn btn-primary" (click)="createUser()" >
-    Create New User
-</button>
-<div class="container">
-    <div *ngIf="usersList">
-        <app-user-info [usersData]="usersList"
-         (editUserAction)="onEdit($event)"
-         (deleteUserAction)="onDelete($event)">
 
-        </app-user-info>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-right">
+            <button class="btn btn-primary bgn-adj" (click)="createUser()" >
+                <i class="bi bi-person-plus"></i>  Create New User
+            </button>            
+        </div>
     </div>
+
+    <div class="row">
+        <div *ngIf="usersList">
+            <app-user-info [usersData]="usersList"
+             (editUserAction)="onEdit($event)"
+             (deleteUserAction)="onDelete($event)">
+    
+            </app-user-info>
+        </div>
+    </div>
+
 </div>
+
